@@ -99,12 +99,9 @@
 		F55FC2D2234F44BE00FD76A1 /* Flick-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				F55FC2D3234F44BE00FD76A1 /* AppDelegate.swift */,
-				F55FC2D5234F44BE00FD76A1 /* SceneDelegate.swift */,
+				F55FC303234F4D0800FD76A1 /* App */,
 				F55FC2D7234F44BE00FD76A1 /* ContentView.swift */,
-				F55FC2D9234F44BF00FD76A1 /* Assets.xcassets */,
-				F55FC2DE234F44BF00FD76A1 /* LaunchScreen.storyboard */,
-				F55FC2E1234F44BF00FD76A1 /* Info.plist */,
+				F55FC304234F4D1300FD76A1 /* Supporting Files */,
 				F55FC2DB234F44BF00FD76A1 /* Preview Content */,
 			);
 			path = "Flick-SwiftUI";
@@ -134,6 +131,25 @@
 				F55FC2F7234F44C000FD76A1 /* Info.plist */,
 			);
 			path = "Flick-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		F55FC303234F4D0800FD76A1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F55FC2D3234F44BE00FD76A1 /* AppDelegate.swift */,
+				F55FC2D5234F44BE00FD76A1 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F55FC304234F4D1300FD76A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F55FC2D9234F44BF00FD76A1 /* Assets.xcassets */,
+				F55FC2DE234F44BF00FD76A1 /* LaunchScreen.storyboard */,
+				F55FC2E1234F44BF00FD76A1 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,7 +454,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Flick-SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 7NVKB74E53;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Flick-SwiftUI/Info.plist";
+				INFOPLIST_FILE = "Flick-SwiftUI/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +474,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Flick-SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 7NVKB74E53;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Flick-SwiftUI/Info.plist";
+				INFOPLIST_FILE = "Flick-SwiftUI/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
