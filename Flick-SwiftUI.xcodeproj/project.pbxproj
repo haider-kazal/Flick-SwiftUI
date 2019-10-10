@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,11 @@
 		F55FC2E0234F44BF00FD76A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F55FC2DE234F44BF00FD76A1 /* LaunchScreen.storyboard */; };
 		F55FC2EB234F44C000FD76A1 /* Flick_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FC2EA234F44C000FD76A1 /* Flick_SwiftUITests.swift */; };
 		F55FC2F6234F44C000FD76A1 /* Flick_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FC2F5234F44C000FD76A1 /* Flick_SwiftUIUITests.swift */; };
+		F55FC307234F51D100FD76A1 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = F55FC306234F51D100FD76A1 /* SwiftyJSON */; };
+		F55FC30A234F521300FD76A1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F55FC309234F521300FD76A1 /* Alamofire */; };
+		F55FC30D234F527300FD76A1 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FC30C234F527300FD76A1 /* ConnectionManager.swift */; };
+		F55FC30F234F533200FD76A1 /* TMDbConnectionInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FC30E234F533200FD76A1 /* TMDbConnectionInterceptor.swift */; };
+		F55FC311234F535B00FD76A1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FC310234F535B00FD76A1 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,9 @@
 		F55FC2F1234F44C000FD76A1 /* Flick-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flick-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55FC2F5234F44C000FD76A1 /* Flick_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flick_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		F55FC2F7234F44C000FD76A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F55FC30C234F527300FD76A1 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		F55FC30E234F533200FD76A1 /* TMDbConnectionInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDbConnectionInterceptor.swift; sourceTree = "<group>"; };
+		F55FC310234F535B00FD76A1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F55FC307234F51D100FD76A1 /* SwiftyJSON in Frameworks */,
+				F55FC30A234F521300FD76A1 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +111,7 @@
 			children = (
 				F55FC303234F4D0800FD76A1 /* App */,
 				F55FC2D7234F44BE00FD76A1 /* ContentView.swift */,
+				F55FC30B234F524D00FD76A1 /* Network */,
 				F55FC304234F4D1300FD76A1 /* Supporting Files */,
 				F55FC2DB234F44BF00FD76A1 /* Preview Content */,
 			);
@@ -138,6 +149,7 @@
 			children = (
 				F55FC2D3234F44BE00FD76A1 /* AppDelegate.swift */,
 				F55FC2D5234F44BE00FD76A1 /* SceneDelegate.swift */,
+				F55FC310234F535B00FD76A1 /* Constants.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -150,6 +162,15 @@
 				F55FC2E1234F44BF00FD76A1 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F55FC30B234F524D00FD76A1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F55FC30C234F527300FD76A1 /* ConnectionManager.swift */,
+				F55FC30E234F533200FD76A1 /* TMDbConnectionInterceptor.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +189,10 @@
 			dependencies = (
 			);
 			name = "Flick-SwiftUI";
+			packageProductDependencies = (
+				F55FC306234F51D100FD76A1 /* SwiftyJSON */,
+				F55FC309234F521300FD76A1 /* Alamofire */,
+			);
 			productName = "Flick-SwiftUI";
 			productReference = F55FC2D0234F44BE00FD76A1 /* Flick-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -240,6 +265,10 @@
 				Base,
 			);
 			mainGroup = F55FC2C7234F44BE00FD76A1;
+			packageReferences = (
+				F55FC305234F51D100FD76A1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				F55FC308234F521300FD76A1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = F55FC2D1234F44BE00FD76A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,8 +313,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F55FC2D4234F44BE00FD76A1 /* AppDelegate.swift in Sources */,
+				F55FC30D234F527300FD76A1 /* ConnectionManager.swift in Sources */,
+				F55FC30F234F533200FD76A1 /* TMDbConnectionInterceptor.swift in Sources */,
 				F55FC2D6234F44BE00FD76A1 /* SceneDelegate.swift in Sources */,
 				F55FC2D8234F44BE00FD76A1 /* ContentView.swift in Sources */,
+				F55FC311234F535B00FD76A1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +642,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F55FC305234F51D100FD76A1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F55FC308234F521300FD76A1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = "5.0.0-rc.2";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F55FC306234F51D100FD76A1 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F55FC305234F51D100FD76A1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		F55FC309234F521300FD76A1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F55FC308234F521300FD76A1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F55FC2C8234F44BE00FD76A1 /* Project object */;
 }
