@@ -1,5 +1,5 @@
 //
-//  ConnectionManager.swift
+//  DataConnection.swift
 //  Flick-SwiftUI
 //
 //  Created by Haider Kazal on 10/10/19.

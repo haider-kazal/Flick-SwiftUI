@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F549FFDE234FA8DE00FA134E /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549FFDD234FA8DE00FA134E /* BaseRouter.swift */; };
+		F549FFE0234FA94F00FA134E /* TMDbBaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549FFDF234FA94F00FA134E /* TMDbBaseRouter.swift */; };
+		F549FFE2234FA98400FA134E /* TMDbDiscoverRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549FFE1234FA98400FA134E /* TMDbDiscoverRouter.swift */; };
+		F549FFE4234FA9AF00FA134E /* TMDbMovieRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549FFE3234FA9AF00FA134E /* TMDbMovieRouter.swift */; };
+		F549FFE6234FA9CA00FA134E /* TMDbSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549FFE5234FA9CA00FA134E /* TMDbSearchRouter.swift */; };
+		F549FFE8234FA9E200FA134E /* TMDbTVShowRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549FFE7234FA9E200FA134E /* TMDbTVShowRouter.swift */; };
+		F549FFEB234FAA9D00FA134E /* CollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F549FFEA234FAA9D00FA134E /* CollectionExtension.swift */; };
 		F55FC2D4234F44BE00FD76A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FC2D3234F44BE00FD76A1 /* AppDelegate.swift */; };
 		F55FC2D6234F44BE00FD76A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FC2D5234F44BE00FD76A1 /* SceneDelegate.swift */; };
 		F55FC2D8234F44BE00FD76A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FC2D7234F44BE00FD76A1 /* ContentView.swift */; };
@@ -17,7 +24,7 @@
 		F55FC2F6234F44C000FD76A1 /* Flick_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FC2F5234F44C000FD76A1 /* Flick_SwiftUIUITests.swift */; };
 		F55FC307234F51D100FD76A1 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = F55FC306234F51D100FD76A1 /* SwiftyJSON */; };
 		F55FC30A234F521300FD76A1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F55FC309234F521300FD76A1 /* Alamofire */; };
-		F55FC30D234F527300FD76A1 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FC30C234F527300FD76A1 /* ConnectionManager.swift */; };
+		F55FC30D234F527300FD76A1 /* DataConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FC30C234F527300FD76A1 /* DataConnection.swift */; };
 		F55FC30F234F533200FD76A1 /* TMDbConnectionInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FC30E234F533200FD76A1 /* TMDbConnectionInterceptor.swift */; };
 		F55FC311234F535B00FD76A1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FC310234F535B00FD76A1 /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F549FFDD234FA8DE00FA134E /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		F549FFDF234FA94F00FA134E /* TMDbBaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDbBaseRouter.swift; sourceTree = "<group>"; };
+		F549FFE1234FA98400FA134E /* TMDbDiscoverRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDbDiscoverRouter.swift; sourceTree = "<group>"; };
+		F549FFE3234FA9AF00FA134E /* TMDbMovieRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDbMovieRouter.swift; sourceTree = "<group>"; };
+		F549FFE5234FA9CA00FA134E /* TMDbSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDbSearchRouter.swift; sourceTree = "<group>"; };
+		F549FFE7234FA9E200FA134E /* TMDbTVShowRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDbTVShowRouter.swift; sourceTree = "<group>"; };
+		F549FFEA234FAA9D00FA134E /* CollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtension.swift; sourceTree = "<group>"; };
 		F55FC2D0234F44BE00FD76A1 /* Flick-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flick-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55FC2D3234F44BE00FD76A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F55FC2D5234F44BE00FD76A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +68,7 @@
 		F55FC2F1234F44C000FD76A1 /* Flick-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flick-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55FC2F5234F44C000FD76A1 /* Flick_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flick_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		F55FC2F7234F44C000FD76A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F55FC30C234F527300FD76A1 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		F55FC30C234F527300FD76A1 /* DataConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConnection.swift; sourceTree = "<group>"; };
 		F55FC30E234F533200FD76A1 /* TMDbConnectionInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDbConnectionInterceptor.swift; sourceTree = "<group>"; };
 		F55FC310234F535B00FD76A1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +100,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F549FFDC234FA8CA00FA134E /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				F549FFDD234FA8DE00FA134E /* BaseRouter.swift */,
+				F549FFDF234FA94F00FA134E /* TMDbBaseRouter.swift */,
+				F549FFE1234FA98400FA134E /* TMDbDiscoverRouter.swift */,
+				F549FFE3234FA9AF00FA134E /* TMDbMovieRouter.swift */,
+				F549FFE5234FA9CA00FA134E /* TMDbSearchRouter.swift */,
+				F549FFE7234FA9E200FA134E /* TMDbTVShowRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		F549FFE9234FAA8400FA134E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F549FFEA234FAA9D00FA134E /* CollectionExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F55FC2C7234F44BE00FD76A1 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +146,7 @@
 			children = (
 				F55FC303234F4D0800FD76A1 /* App */,
 				F55FC2D7234F44BE00FD76A1 /* ContentView.swift */,
+				F549FFE9234FAA8400FA134E /* Extensions */,
 				F55FC30B234F524D00FD76A1 /* Network */,
 				F55FC304234F4D1300FD76A1 /* Supporting Files */,
 				F55FC2DB234F44BF00FD76A1 /* Preview Content */,
@@ -167,7 +203,8 @@
 		F55FC30B234F524D00FD76A1 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				F55FC30C234F527300FD76A1 /* ConnectionManager.swift */,
+				F549FFDC234FA8CA00FA134E /* Routers */,
+				F55FC30C234F527300FD76A1 /* DataConnection.swift */,
 				F55FC30E234F533200FD76A1 /* TMDbConnectionInterceptor.swift */,
 			);
 			path = Network;
@@ -312,10 +349,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F549FFE8234FA9E200FA134E /* TMDbTVShowRouter.swift in Sources */,
+				F549FFE4234FA9AF00FA134E /* TMDbMovieRouter.swift in Sources */,
 				F55FC2D4234F44BE00FD76A1 /* AppDelegate.swift in Sources */,
-				F55FC30D234F527300FD76A1 /* ConnectionManager.swift in Sources */,
+				F55FC30D234F527300FD76A1 /* DataConnection.swift in Sources */,
+				F549FFE0234FA94F00FA134E /* TMDbBaseRouter.swift in Sources */,
+				F549FFEB234FAA9D00FA134E /* CollectionExtension.swift in Sources */,
+				F549FFDE234FA8DE00FA134E /* BaseRouter.swift in Sources */,
+				F549FFE2234FA98400FA134E /* TMDbDiscoverRouter.swift in Sources */,
 				F55FC30F234F533200FD76A1 /* TMDbConnectionInterceptor.swift in Sources */,
 				F55FC2D6234F44BE00FD76A1 /* SceneDelegate.swift in Sources */,
+				F549FFE6234FA9CA00FA134E /* TMDbSearchRouter.swift in Sources */,
 				F55FC2D8234F44BE00FD76A1 /* ContentView.swift in Sources */,
 				F55FC311234F535B00FD76A1 /* Constants.swift in Sources */,
 			);
@@ -487,6 +531,7 @@
 				DEVELOPMENT_TEAM = 7NVKB74E53;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Flick-SwiftUI/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -507,6 +552,7 @@
 				DEVELOPMENT_TEAM = 7NVKB74E53;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Flick-SwiftUI/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
